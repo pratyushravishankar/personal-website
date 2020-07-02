@@ -12,6 +12,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

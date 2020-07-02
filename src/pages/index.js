@@ -1,10 +1,24 @@
+
 import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
-function IndexPage() {
+// import { graphql } from 'gatsby'
+// import PropTypes from "prop-types"
+import FavouriteRoll from "../components/FavouriteRoll";
+
+export default function IndexPage() {
+
+  // const { allMarkdownRemark } = data
+  // const { edges } = allMarkdownRemark
+
+  // const listItems = edges.map((item) =>
+  //   <li key={item.node.frontmatter.path}>{item.node.frontmatter.path}</li>
+  // );
+
+  // console.log(data)
   return (
     <Layout>
       <SEO
@@ -32,12 +46,25 @@ function IndexPage() {
             rel="noopener noreferrer"
           >
             Tailwind CSS
-          </a>
-          , a utility-first CSS framework.
+            </a>
+            , a utility-first CSS framework.
         </p>
+        <FavouriteRoll />
+        {/* <ul>{listItems}</ul> */}
+
+
       </section>
     </Layout>
   );
 }
 
-export default IndexPage;
+
+
+
+
+
+
+
+
+
+
