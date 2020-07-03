@@ -8,6 +8,7 @@ import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 // import { graphql } from 'gatsby'
 // import PropTypes from "prop-types"
 import FavouriteRoll from "../components/FavouriteRoll";
+import ProjectRoll from "../components/ProjectRoll";
 
 export default function IndexPage() {
 
@@ -56,6 +57,10 @@ export default function IndexPage() {
             , a utility-first CSS framework.
         </p>
         <div className="py-4" >
+          <h2 className="inline-block p-3 mb-4 text-2xl font-bold">
+            Projects
+          </h2>
+          <ProjectRoll />
           <h2 className="inline-block p-3 mb-4 text-2xl font-bold">
             Favourite Things Right Now
           </h2>

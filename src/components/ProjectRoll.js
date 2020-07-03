@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from "gatsby"
 import FaveTile from './FaveTile.re'
 
 
-export default function FavouriteRoll() {
+export default function ProjectRoll() {
 
     // const { allMarkdownRemark } = data
     // const { edges: posts } = allMarkdownRemark
@@ -13,8 +13,8 @@ export default function FavouriteRoll() {
     return (
         <StaticQuery
             query={graphql`
-                query FavouriteQuery {
-                    allMarkdownRemark(filter: {frontmatter: {key: {eq: "favourite"}}}, sort: {order: DESC, fields: frontmatter___date}) {
+                query ProjectQuery {
+                    allMarkdownRemark(filter: {frontmatter: {key: {eq: "project"}}}, sort: {order: DESC, fields: frontmatter___date}) {
                     edges {
                         node {
                         id
@@ -60,10 +60,6 @@ export default function FavouriteRoll() {
         // </div>
     )
 }
-
-
-
-
 
 
 
