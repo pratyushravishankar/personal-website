@@ -22,7 +22,7 @@ function FaveTile(Props) {
                   }, post.excerpt));
   };
   return React.createElement("div", {
-              className: "max-w-sm rounded overflow-hidden shadow-lg",
+              className: "max-w-sm rounded overflow-hidden shadow-lg h-64",
               onMouseEnter: (function (param) {
                   return Curry._1(setTileState, (function (param) {
                                 return /* Words */0;

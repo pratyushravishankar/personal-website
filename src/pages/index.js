@@ -61,16 +61,16 @@ export default function IndexPage() {
             Projects
           </h2>
           <ProjectRoll />
-          <div className="box-border h-screen max-w-full bg-gray-200">
-            <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-gray-600 h-64">
-              Favourite Things Right Now
+          {/* <div className="box-border h-screen max-w-full bg-gray-200"> */}
+          <h2 className="inline-block p-3 mb-4 text-2xl font-bold">
+            Favourite Things Right Now
             </h2>
-            {/* <div className="box-content h-64 w-64 p-4 bg-gray-200">
+          {/* <div className="box-content h-64 w-64 p-4 bg-gray-200">
               <div className="h-full w-full bg-gray-400"></div>
             </div> */}
-            <div className="h-full w-full bg-gray-400">
-              <FavouriteRoll />
-            </div>
+          <div className="w-full">
+            <FavouriteRoll />
+            {/* </div> */}
 
           </div>
         </div>

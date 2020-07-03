@@ -81,7 +81,7 @@ let make = (~post) => {
       // <Link _to={post##fields##slug}> {React.string("Keep Reading")} </Link>
   };
   <div
-    className="max-w-sm rounded overflow-hidden shadow-lg"
+    className="max-w-sm rounded overflow-hidden shadow-lg h-64"
     onMouseEnter={_ => setTileState(_ => Words)}
     onMouseLeave={_ => setTileState(_ => Image)}>
     //   <img className="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
