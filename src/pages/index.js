@@ -41,7 +41,7 @@ export default function IndexPage() {
         />
 
         <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Hey there! Welcome to your first Gatsby site.
+          Pratyush Ravishankar | UNDER DEVELOPMENT.
         </h2>
 
         <p className="leading-loose">
@@ -61,10 +61,18 @@ export default function IndexPage() {
             Projects
           </h2>
           <ProjectRoll />
-          <h2 className="inline-block p-3 mb-4 text-2xl font-bold">
-            Favourite Things Right Now
-          </h2>
-          <FavouriteRoll />
+          <div className="box-border h-screen max-w-full bg-gray-200">
+            <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-gray-600 h-64">
+              Favourite Things Right Now
+            </h2>
+            {/* <div className="box-content h-64 w-64 p-4 bg-gray-200">
+              <div className="h-full w-full bg-gray-400"></div>
+            </div> */}
+            <div className="h-full w-full bg-gray-400">
+              <FavouriteRoll />
+            </div>
+
+          </div>
         </div>
 
 
