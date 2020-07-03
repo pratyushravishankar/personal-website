@@ -20,13 +20,19 @@ export default function IndexPage() {
 
   // console.log(data)
   return (
+
+
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
 
-      <section className="text-center">
+
+
+
+
+      < section className="text-center" >
         <img
           alt="Cat and human sitting on a couch"
           className="block w-1/2 mx-auto mb-8"
@@ -49,12 +55,19 @@ export default function IndexPage() {
             </a>
             , a utility-first CSS framework.
         </p>
-        <FavouriteRoll />
+        <div className="py-4" >
+          <h2 className="inline-block p-3 mb-4 text-2xl font-bold">
+            Favourite Things Right Now
+          </h2>
+          <FavouriteRoll />
+        </div>
+
+
         {/* <ul>{listItems}</ul> */}
 
 
-      </section>
-    </Layout>
+      </section >
+    </Layout >
   );
 }
 

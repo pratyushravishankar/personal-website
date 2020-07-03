@@ -2,7 +2,7 @@ import React from 'react'
 // import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from "gatsby"
 // import PreviewCompatibleImage from './PreviewCompatibleImage'
-// import FaveTile from './FaveTile.re'
+import FaveTile from './FaveTile.re'
 
 
 export default function FavouriteRoll() {
@@ -29,12 +29,27 @@ export default function FavouriteRoll() {
                 }
             `}
             render={data => (
-                <div>
+
+                <div className="grid gap-4 grid-cols-3">
+
+
+
+
+
+
+
                     {data.allMarkdownRemark.edges &&
                         data.allMarkdownRemark.edges.map(({ node: post }) => (
-                            // <FaveTile key={post.id} post={post} />  
-                            <li key={post.id}> yo!</li>
+                            // <div className="w-1/2" key={post.id}>
+                            <FaveTile key={post.id} post={post} />
+                            /* // <li key={post.id}> lol ß</li> */
+
+                            // <FaveTile post={post} />
+                            // </div>
+
+
                         ))}
+
                 </div>
             )}
         />
@@ -45,6 +60,9 @@ export default function FavouriteRoll() {
         // </div>
     )
 }
+
+
+
 
 
 

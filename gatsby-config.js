@@ -13,6 +13,14 @@ module.exports = {
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: "gatsby-plugin-reason",
+      options: {
+        derivePathFromComponentName: true
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
