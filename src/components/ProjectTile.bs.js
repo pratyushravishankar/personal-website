@@ -2,6 +2,7 @@
 'use strict';
 
 var React = require("react");
+var Belt_Array = require("bs-platform/lib/js/belt_Array.js");
 
 function ProjectTile(Props) {
   var post = Props.post;
@@ -10,7 +11,11 @@ function ProjectTile(Props) {
       });
   post.frontmatter.featuredimage;
   var renderContentJsx = function (param) {
-    return React.createElement("div", undefined, "WORDS GO HERE");
+    return React.createElement("div", undefined, React.createElement("div", {
+                    className: "font-bold text-xl mb-2"
+                  }, post.frontmatter.title), React.createElement("p", {
+                    className: "text-gray-700 text-base"
+                  }, post.excerpt));
   };
   return React.createElement("div", {
               className: "max-w-sm rounded overflow-hidden shadow-lg h-64"
@@ -18,13 +23,12 @@ function ProjectTile(Props) {
                   className: "px-6 py-4"
                 }, renderContentJsx(undefined)), React.createElement("div", {
                   className: "px-6 py-4"
-                }, React.createElement("span", {
-                      className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-                    }, "#GatsbyJs"), React.createElement("span", {
-                      className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-                    }, "#ReasonML"), React.createElement("span", {
-                      className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
-                    }, "#winter")));
+                }, Belt_Array.map(post.frontmatter.tech, (function (item) {
+                        return React.createElement("span", {
+                                    key: item,
+                                    className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                                  }, item);
+                      }))));
 }
 
 var Link;

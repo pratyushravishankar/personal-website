@@ -81,7 +81,14 @@ let make = (~post) => {
   //       // <Link _to={post##fields##slug}> {React.string("Keep Reading")} </Link>
   //   };
   let renderContentJsx = () => {
-    <div> {React.string("WORDS GO HERE")} </div>;
+    <div>
+      <div className="font-bold text-xl mb-2">
+        {React.string(post##frontmatter##title)}
+      </div>
+      <p className="text-gray-700 text-base">
+        {React.string(post##excerpt)}
+      </p>
+    </div>;
   };
   <div className="max-w-sm rounded overflow-hidden shadow-lg h-64">
     // onMouseEnter={_ => setTileState(_ => Words)}
@@ -94,19 +101,39 @@ let make = (~post) => {
         //  | Image => renderImageJsx()
         //  }}
          {renderContentJsx()} </div>
+      // <div className="px-6 py-4">
+      //   <span
+      //     className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+      //     {React.string("#GatsbyJs")}
+      //   </span>
+      //   <span
+      //     className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+      //     {React.string("#ReasonML")}
+      //   </span>
+      //   <span
+      //     className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+      //     {React.string("#winter")}
+      //   </span>
+      // </div>
+      // <div className="px-6 py-4">
+      //   {post##frontmatter##tech##map(t =>
+      //      <span
+      //        className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+      //        {React.string(t)}
+      //      </span>
+      //    )}
+      // </div>
       <div className="px-6 py-4">
-        <span
-          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-          {React.string("#GatsbyJs")}
-        </span>
-        <span
-          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-          {React.string("#ReasonML")}
-        </span>
-        <span
-          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-          {React.string("#winter")}
-        </span>
+        {post##frontmatter##tech
+         ->Belt.Array.map(item =>
+             <span
+               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+               key=item>
+               {React.string(item)}
+             </span>
+           )
+         /* Since everything is typed, the arrays need to be, too! */
+         ->React.array}
       </div>
     </div>;
   //   <div>
@@ -118,7 +145,6 @@ let make = (~post) => {
   //        | Image => renderImageJsx()
   //        }}
   //     </article>
-  //   </div>;
 };
 
 let default = make;
