@@ -9,11 +9,11 @@ function Footer() {
                     Created by{` `}
                     <a
                         className="font-bold no-underline"
-                        href="https://bryant.io"
+                        href="https://www.linkedin.com/in/pratyush-ravishankar-a5391615a/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Taylor Bryant
+                        Pratyush Ravishankar
                 </a>
                 </p>
 

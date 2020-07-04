@@ -2,7 +2,7 @@ import React from 'react'
 // import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from "gatsby"
 // import PreviewCompatibleImage from './PreviewCompatibleImage'
-import FaveTile from './FaveTile.re'
+import ProjectTile from './ProjectTile.re'
 
 
 export default function ProjectRoll() {
@@ -41,7 +41,7 @@ export default function ProjectRoll() {
                     {data.allMarkdownRemark.edges &&
                         data.allMarkdownRemark.edges.map(({ node: post }) => (
                             // <div className="w-1/2" key={post.id}>
-                            <FaveTile key={post.id} post={post} />
+                            <ProjectTile key={post.id} post={post} />
                             /* // <li key={post.id}> lol ß</li> */
 
                             // <FaveTile post={post} />
