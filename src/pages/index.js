@@ -45,16 +45,7 @@ export default function IndexPage() {
         </h2>
 
         <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold text-gray-900 no-underline"
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-            </a>
-            , a utility-first CSS framework.
+          under development
         </p>
         <div className="py-4" >
           <h2 className="inline-block p-3 mb-4 text-2xl font-bold">
@@ -62,7 +53,7 @@ export default function IndexPage() {
           </h2>
           <ProjectRoll />
           {/* <div className="box-border h-screen max-w-full bg-gray-200"> */}
-          <h2 className="inline-block p-3 mb-4 text-2xl font-bold">
+          <h2 className="inline-block p-10 mb-4 text-2xl font-bold">
             Favourite Things Right Now
             </h2>
           {/* <div className="box-content h-64 w-64 p-4 bg-gray-200">

@@ -22,6 +22,7 @@ export default function ProjectRoll() {
                             key
                             title
                             tech
+                            ext
                         }
                         excerpt
                         }

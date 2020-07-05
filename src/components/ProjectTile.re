@@ -1,4 +1,7 @@
 module Link = Gatsby.Link;
+// module { FaExternalLinkAlt } from "react-icons/fa";
+// %bs.raw
+// {| import { FaExternalLinkAlt } from 'react-icons/fa' |};
 
 type imageInfoString = {
   image: option(string),
@@ -19,6 +22,7 @@ let make = (~post) => {
   let (tileState, setTileState) = React.useState(_ => Image);
 
   let possNullImg = Js.Nullable.toOption(post##frontmatter##featuredimage);
+  let possNullExternal = Js.Nullable.toOption(post##frontmatter##ext);
   //   let renderImageJsx = () => {
   //     <div>
   //       {switch (possNullImg) {
@@ -123,6 +127,27 @@ let make = (~post) => {
       //      </span>
       //    )}
       // </div>
+      <div>
+        {switch (possNullExternal) {
+         | None => React.null
+         | Some(img) =>
+           <a href=img target="_blank" rel="noopener noreferrer">
+             {React.string("EXTERNAL LINK")}
+           </a>
+         }}
+      </div>
+      // <p className="leading-loose">
+      //   This is a barebones starter for Gatsby styled using{` `}
+      //   <a
+      //     className="font-bold text-gray-900 no-underline"
+      //     href="https://tailwindcss.com/"
+      //     target="_blank"
+      //     rel="noopener noreferrer"
+      //   >
+      //     Tailwind CSS
+      //   </a>
+      //   , a utility-first CSS framework.
+      // </p>
       <div className="px-6 py-4">
         {post##frontmatter##tech
          ->Belt.Array.map(item =>

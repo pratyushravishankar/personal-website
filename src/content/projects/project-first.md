@@ -6,6 +6,7 @@ featuredimage: /img/chemex.jpg
 tech:
     - Jupyter Notebook
     - Python
+ext: https://research.warwickdatascience.com/word2vec/
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 

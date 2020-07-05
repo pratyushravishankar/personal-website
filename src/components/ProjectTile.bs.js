@@ -10,6 +10,7 @@ function ProjectTile(Props) {
         return /* Image */1;
       });
   post.frontmatter.featuredimage;
+  var possNullExternal = post.frontmatter.ext;
   var renderContentJsx = function (param) {
     return React.createElement("div", undefined, React.createElement("div", {
                     className: "font-bold text-xl mb-2"
@@ -21,7 +22,11 @@ function ProjectTile(Props) {
               className: "max-w-sm rounded overflow-hidden shadow-lg h-64"
             }, React.createElement("div", {
                   className: "px-6 py-4"
-                }, renderContentJsx(undefined)), React.createElement("div", {
+                }, renderContentJsx(undefined)), React.createElement("div", undefined, (possNullExternal == null) ? null : React.createElement("a", {
+                        href: possNullExternal,
+                        rel: "noopener noreferrer",
+                        target: "_blank"
+                      }, "EXTERNAL LINK")), React.createElement("div", {
                   className: "px-6 py-4"
                 }, Belt_Array.map(post.frontmatter.tech, (function (item) {
                         return React.createElement("span", {
