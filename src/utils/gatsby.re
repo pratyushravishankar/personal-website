@@ -13,3 +13,24 @@ module Link = {
     React.element =
     "default";
 };
+
+module Image = {
+  [@bs.module "gatsby-image"] [@react.component]
+  external make:
+    (
+      ~resolutions: option('any)=?,
+      ~sizes: option('any)=?,
+      ~fixed: option('any)=?,
+      ~fluid: option('any)=?,
+      ~title: option(string)=?,
+      ~alt: option(string)=?,
+      ~className: option(string)=?,
+      ~critical: option(bool)=?,
+      ~style: option(ReactDOMRe.Style.t)=?,
+      ~imgStyle: option(ReactDOMRe.Style.t)=?,
+      ~placeholderStyle: option(ReactDOMRe.Style.t)=?,
+      ~placeholderClassName: option(string)=?
+    ) =>
+    React.element =
+    "default";
+};

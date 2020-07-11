@@ -1,7 +1,7 @@
 ####{BSB GENERATED: NO EDIT
 B lib/bs
 FLG -open GatsbyStarterTailwind
-FLG -ppx '/Users/pratyush/.config/yarn/global/node_modules/bs-platform/darwin/bsc.exe -as-ppx -bs-jsx 3'
+FLG -ppx '/Users/pratyush/Documents/misc/personalwebsite/tailwindwebsite/node_modules/bs-platform/darwin/bsc.exe -as-ppx -bs-jsx 3'
 S /Users/pratyush/Documents/misc/personalwebsite/tailwindwebsite/node_modules/bs-platform/lib/ocaml
 B /Users/pratyush/Documents/misc/personalwebsite/tailwindwebsite/node_modules/bs-platform/lib/ocaml
 FLG -w +a-4-9-20-40-41-42-50-61-102

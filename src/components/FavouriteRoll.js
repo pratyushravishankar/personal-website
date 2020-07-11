@@ -21,6 +21,13 @@ export default function FavouriteRoll() {
                         frontmatter {
                             key
                             title
+                            image {
+                                childImageSharp {
+                                  fluid(maxWidth: 120, quality: 100) {
+                                    ...GatsbyImageSharpFluid
+                                  }
+                                }
+                              }
                         }
                         excerpt
                         }

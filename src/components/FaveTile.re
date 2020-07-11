@@ -1,4 +1,5 @@
 module Link = Gatsby.Link;
+module Image = Gatsby.Image;
 
 type imageInfoString = {
   image: option(string),
@@ -18,20 +19,12 @@ type tileState =
 let make = (~post) => {
   let (tileState, setTileState) = React.useState(_ => Image);
 
-  let possNullImg = Js.Nullable.toOption(post##frontmatter##featuredimage);
+  let possNullImg = Js.Nullable.toOption(post##frontmatter##image);
   let renderImageJsx = () => {
     <div>
       {switch (possNullImg) {
        | None => React.string("placeholderimageMAIN")
-       | Some(img) =>
-         <div
-           //    <PreviewCompatibleImage
-           //      imageInfo={
-           //        image: img,
-           //        alt: "featured image thumbnail for post ${post##frontmatter##title}",
-           //      }
-           //    />
-         />
+       | Some(img) => <div> <Image fluid=img##childImageSharp##fluid /> </div>
        }}
     </div>;
   };

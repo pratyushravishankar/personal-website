@@ -3,6 +3,7 @@
 
 var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
+var GatsbyImage = require("gatsby-image");
 
 function FaveTile(Props) {
   var post = Props.post;
@@ -10,9 +11,11 @@ function FaveTile(Props) {
         return /* Image */1;
       });
   var setTileState = match[1];
-  var possNullImg = post.frontmatter.featuredimage;
+  var possNullImg = post.frontmatter.image;
   var renderImageJsx = function (param) {
-    return React.createElement("div", undefined, (possNullImg == null) ? "placeholderimageMAIN" : React.createElement("div", undefined));
+    return React.createElement("div", undefined, (possNullImg == null) ? "placeholderimageMAIN" : React.createElement("div", undefined, React.createElement(GatsbyImage.default, {
+                          fluid: possNullImg.childImageSharp.fluid
+                        })));
   };
   var renderWordsJsx = function (param) {
     return React.createElement("div", undefined, (possNullImg == null) ? "placeholderimageWORDS" : React.createElement("div", undefined), React.createElement("div", {
@@ -48,11 +51,14 @@ function FaveTile(Props) {
 
 var Link;
 
+var $$Image;
+
 var make = FaveTile;
 
 var $$default = FaveTile;
 
 exports.Link = Link;
+exports.$$Image = $$Image;
 exports.make = make;
 exports.$$default = $$default;
 exports.default = $$default;
