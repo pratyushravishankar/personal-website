@@ -13,12 +13,12 @@ function FaveTile(Props) {
   var setTileState = match[1];
   var possNullImg = post.frontmatter.image;
   var renderImageJsx = function (param) {
-    return React.createElement("div", undefined, (possNullImg == null) ? "placeholderimageMAIN" : React.createElement("div", undefined, React.createElement(GatsbyImage.default, {
+    return React.createElement("div", undefined, (possNullImg == null) ? null : React.createElement("div", undefined, React.createElement(GatsbyImage.default, {
                           fluid: possNullImg.childImageSharp.fluid
                         })));
   };
   var renderWordsJsx = function (param) {
-    return React.createElement("div", undefined, (possNullImg == null) ? "placeholderimageWORDS" : React.createElement("div", undefined), React.createElement("div", {
+    return React.createElement("div", undefined, React.createElement("div", {
                     className: "font-bold text-xl mb-2"
                   }, post.frontmatter.title), React.createElement("p", {
                     className: "text-gray-700 text-base"

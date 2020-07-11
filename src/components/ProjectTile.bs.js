@@ -6,10 +6,6 @@ var Belt_Array = require("bs-platform/lib/js/belt_Array.js");
 
 function ProjectTile(Props) {
   var post = Props.post;
-  React.useState(function () {
-        return /* Image */1;
-      });
-  post.frontmatter.featuredimage;
   var possNullExternal = post.frontmatter.ext;
   var renderContentJsx = function (param) {
     return React.createElement("div", undefined, React.createElement("div", {

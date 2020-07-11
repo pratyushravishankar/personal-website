@@ -49,7 +49,7 @@ export default function IndexPage() {
         </p>
         <div className="py-4" >
           <h2 className="inline-block p-3 mb-4 text-2xl font-bold">
-            Projects
+            Featured projects
           </h2>
           <ProjectRoll />
           {/* <div className="box-border h-screen max-w-full bg-gray-200"> */}
