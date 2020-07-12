@@ -18,14 +18,16 @@ function FaveTile(Props) {
                         })));
   };
   var renderWordsJsx = function (param) {
-    return React.createElement("div", undefined, React.createElement("div", {
-                    className: "font-bold text-xl mb-2"
+    return React.createElement("div", {
+                className: "px-6 py-4"
+              }, React.createElement("div", {
+                    className: "font-bold text-xl mb-2 text-coffee"
                   }, post.frontmatter.title), React.createElement("p", {
-                    className: "text-gray-700 text-base"
+                    className: "text-gray-700 text-base text-coffee"
                   }, post.excerpt));
   };
   return React.createElement("div", {
-              className: "max-w-sm rounded overflow-hidden shadow-lg h-64",
+              className: "max-w-sm rounded overflow-hidden shadow-lg h-64 bg-timberwolf",
               onMouseEnter: (function (param) {
                   return Curry._1(setTileState, (function (param) {
                                 return /* Words */0;
@@ -36,12 +38,10 @@ function FaveTile(Props) {
                                 return /* Image */1;
                               }));
                 })
-            }, React.createElement("div", {
-                  className: "px-6 py-4"
-                }, match[0] ? renderImageJsx(undefined) : renderWordsJsx(undefined)), React.createElement("div", {
+            }, React.createElement("div", undefined, match[0] ? renderImageJsx(undefined) : renderWordsJsx(undefined)), React.createElement("div", {
                   className: "px-6 py-4"
                 }, React.createElement("span", {
-                      className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                      className: "inline-block bg-red rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
                     }, "#photography"), React.createElement("span", {
                       className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
                     }, "#travel"), React.createElement("span", {

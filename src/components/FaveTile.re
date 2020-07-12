@@ -29,22 +29,22 @@ let make = (~post) => {
     </div>;
   };
   let renderWordsJsx = () => {
-    <div>
-      <div className="font-bold text-xl mb-2">
+    <div className="px-6 py-4">
+      <div className="font-bold text-xl mb-2 text-coffee">
         {React.string(post##frontmatter##title)}
       </div>
-      <p className="text-gray-700 text-base">
+      <p className="text-gray-700 text-base text-coffee">
         {React.string(post##excerpt)}
       </p>
     </div>;
   };
   <div
-    className="max-w-sm rounded overflow-hidden shadow-lg h-64"
+    className="max-w-sm rounded overflow-hidden shadow-lg h-64 bg-timberwolf"
     onMouseEnter={_ => setTileState(_ => Words)}
     onMouseLeave={_ => setTileState(_ => Image)}>
     //   <img className="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
 
-      <div className="px-6 py-4">
+      <div>
         {switch (tileState) {
          | Words => renderWordsJsx()
          | Image => renderImageJsx()
@@ -52,7 +52,7 @@ let make = (~post) => {
       </div>
       <div className="px-6 py-4">
         <span
-          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+          className="inline-block bg-red rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
           {React.string("#photography")}
         </span>
         <span

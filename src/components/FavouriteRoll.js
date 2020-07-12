@@ -23,17 +23,24 @@ export default function FavouriteRoll() {
                             title
                             image {
                                 childImageSharp {
-                                  fluid(maxWidth: 120, quality: 100) {
+                                  fluid(maxWidth: 100, maxHeight: 100, quality:100, duotone: {
+                                    highlight: "#d8dad3",
+                                    shadow: "#403233",
+                                    
+                                  }) {
                                     ...GatsbyImageSharpFluid
                                   }
                                 }
                               }
+                              
                         }
                         excerpt
                         }
                     }
                     }
                 }
+
+
             `}
             render={data => (
 
