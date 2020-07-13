@@ -23,10 +23,9 @@ export default function FavouriteRoll() {
                             title
                             image {
                                 childImageSharp {
-                                  fluid(maxWidth: 100, maxHeight: 100, quality:100, duotone: {
-                                    highlight: "#d8dad3",
-                                    shadow: "#403233",
-                                    
+                                  fluid(maxWidth: 100, maxHeight: 100, quality:82, duotone: {
+                                    highlight: "#15DB93",
+                                    shadow: "#080F5B",                                  
                                   }) {
                                     ...GatsbyImageSharpFluid
                                   }
@@ -44,14 +43,9 @@ export default function FavouriteRoll() {
             `}
             render={data => (
 
-                <div className="grid gap-4 grid-cols-3">
-
-
-
-
-
-
-
+                // <div className="h-screen flex">
+                // <div className="grid gap-4 grid-cols-3 bg-blue-500 w-full">
+                <div className="flex flex-wrap flex-col sm:flex-row sm:mx-2">
                     {data.allMarkdownRemark.edges &&
                         data.allMarkdownRemark.edges.map(({ node: post }) => (
                             // <div className="w-1/2" key={post.id}>
@@ -65,6 +59,10 @@ export default function FavouriteRoll() {
                         ))}
 
                 </div>
+
+
+
+
             )}
         />
         // <div>

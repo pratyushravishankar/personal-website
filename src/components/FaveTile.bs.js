@@ -19,34 +19,36 @@ function FaveTile(Props) {
   };
   var renderWordsJsx = function (param) {
     return React.createElement("div", {
-                className: "px-6 py-4"
+                className: "px-6 py-4 flex flex-col items-center sm:p-3 md:p-8"
               }, React.createElement("div", {
-                    className: "font-bold text-xl mb-2 text-coffee"
+                    className: "font-bold text-xl mb-2 text-white"
                   }, post.frontmatter.title), React.createElement("p", {
-                    className: "text-gray-700 text-base text-coffee"
+                    className: "text-white text-base"
                   }, post.excerpt));
   };
   return React.createElement("div", {
-              className: "max-w-sm rounded overflow-hidden shadow-lg h-64 bg-timberwolf",
-              onMouseEnter: (function (param) {
-                  return Curry._1(setTileState, (function (param) {
-                                return /* Words */0;
-                              }));
-                }),
-              onMouseLeave: (function (param) {
-                  return Curry._1(setTileState, (function (param) {
-                                return /* Image */1;
-                              }));
-                })
-            }, React.createElement("div", undefined, match[0] ? renderImageJsx(undefined) : renderWordsJsx(undefined)), React.createElement("div", {
-                  className: "px-6 py-4"
-                }, React.createElement("span", {
-                      className: "inline-block bg-red rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-                    }, "#photography"), React.createElement("span", {
-                      className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-                    }, "#travel"), React.createElement("span", {
-                      className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
-                    }, "#winter")));
+              className: "sm:w-1/3 mt-4"
+            }, React.createElement("div", {
+                  className: "h-full overflow-hidden rounded-lg border-b-4 border-aquamarine shadow-2xl h-64 bg-bluedarkest flex flex-col sm:mx-2",
+                  onMouseEnter: (function (param) {
+                      return Curry._1(setTileState, (function (param) {
+                                    return /* Words */0;
+                                  }));
+                    }),
+                  onMouseLeave: (function (param) {
+                      return Curry._1(setTileState, (function (param) {
+                                    return /* Image */1;
+                                  }));
+                    })
+                }, React.createElement("div", undefined, match[0] ? renderImageJsx(undefined) : renderWordsJsx(undefined)), React.createElement("div", {
+                      className: "px-6 py-4"
+                    }, React.createElement("span", {
+                          className: "inline-block bg-red rounded-full px-3 py-1 text-sm font-semibold text-champagne mr-2"
+                        }, "#photography"), React.createElement("span", {
+                          className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                        }, "#travel"), React.createElement("span", {
+                          className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                        }, "#winter"))));
 }
 
 var Link;

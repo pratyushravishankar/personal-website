@@ -29,42 +29,42 @@ let make = (~post) => {
     </div>;
   };
   let renderWordsJsx = () => {
-    <div className="px-6 py-4">
-      <div className="font-bold text-xl mb-2 text-coffee">
+    <div className="px-6 py-4 flex flex-col items-center sm:p-3 md:p-8">
+      <div className="font-bold text-xl mb-2 text-white">
         {React.string(post##frontmatter##title)}
       </div>
-      <p className="text-gray-700 text-base text-coffee">
-        {React.string(post##excerpt)}
-      </p>
+      <p className="text-white text-base"> {React.string(post##excerpt)} </p>
     </div>;
   };
-  <div
-    className="max-w-sm rounded overflow-hidden shadow-lg h-64 bg-timberwolf"
-    onMouseEnter={_ => setTileState(_ => Words)}
-    onMouseLeave={_ => setTileState(_ => Image)}>
-    //   <img className="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
+  <div className="sm:w-1/3 mt-4">
+    <div
+      className="h-full overflow-hidden rounded-lg border-b-4 border-aquamarine shadow-2xl h-64 bg-bluedarkest flex flex-col sm:mx-2"
+      onMouseEnter={_ => setTileState(_ => Words)}
+      onMouseLeave={_ => setTileState(_ => Image)}>
+      //   <img className="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
 
-      <div>
-        {switch (tileState) {
-         | Words => renderWordsJsx()
-         | Image => renderImageJsx()
-         }}
+        <div>
+          {switch (tileState) {
+           | Words => renderWordsJsx()
+           | Image => renderImageJsx()
+           }}
+        </div>
+        <div className="px-6 py-4">
+          <span
+            className="inline-block bg-red rounded-full px-3 py-1 text-sm font-semibold text-champagne mr-2">
+            {React.string("#photography")}
+          </span>
+          <span
+            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+            {React.string("#travel")}
+          </span>
+          <span
+            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+            {React.string("#winter")}
+          </span>
+        </div>
       </div>
-      <div className="px-6 py-4">
-        <span
-          className="inline-block bg-red rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-          {React.string("#photography")}
-        </span>
-        <span
-          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-          {React.string("#travel")}
-        </span>
-        <span
-          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-          {React.string("#winter")}
-        </span>
-      </div>
-    </div>;
+  </div>;
 };
 
 let default = make;

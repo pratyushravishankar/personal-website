@@ -3,7 +3,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+// import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
 // import { graphql } from 'gatsby'
 // import PropTypes from "prop-types"
@@ -33,44 +33,48 @@ export default function IndexPage() {
 
 
 
-      < section className="text-center" >
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block w-1/2 mx-auto mb-8"
-          src={catAndHumanIllustration}
-        />
+      {/* < section className="text-ce nter" > */}
+      {/* <img
+        alt="Cat and human sitting on a couch"
+        className="block w-1/2 mx-auto mb-8"
+        src={catAndHumanIllustration}
+      /> */}
 
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
+      <div className="w-full h-screen bg-bluedarkest px-4 py-2 flex flex-col justify-center items-center">
+        <h2 className="inline-block p-3 mb-4 text-6xl font-bold bg-bluedark text-aquamarine w-full max-w-4xl rounded-lg">
           Pratyush Ravishankar | UNDER DEVELOPMENT.
         </h2>
 
-        <p className="leading-loose">
+        <p className="bg-bluedark text-aquamarine">
           under development
         </p>
-        <div className="py-4" >
-          <h2 className="inline-block p-3 mb-4 text-2xl font-bold">
-            Featured projects
-          </h2>
-          <ProjectRoll />
-          {/* <div className="box-border h-screen max-w-full bg-gray-200"> */}
-          <h2 className="inline-block p-10 mb-4 text-2xl font-bold">
-            Favourite Things Right Now
-            </h2>
-          {/* <div className="box-content h-64 w-64 p-4 bg-gray-200">
-              <div className="h-full w-full bg-gray-400"></div>
-            </div> */}
-          <div className="w-full">
-            <FavouriteRoll />
-            {/* </div> */}
+      </div>
 
-          </div>
+      <main className="mt-16 w-full flex flex-col justify-center items-center">
+        <div className="max-w-4xl mx-4">
+          <h2 className="font-bold text-xl text-6xl text-bluedarkest border-b-4 border-aquamarine"> Featured projects </h2>
         </div>
 
+        <div className="max-w-6xl">
+          <ProjectRoll />
+        </div>
 
-        {/* <ul>{listItems}</ul> */}
+        <div className="max-w-4xl mx-4">
+          <h2 className="font-bold text-xl text-6xl text-bluedarkest border-b-4 border-aquamarine"> Favourite Things Right Now </h2>
+        </div>
+
+        <div className="max-w-6xl mb-16">
+          <FavouriteRoll />
+        </div>
+
+      </main>
 
 
-      </section >
+
+      {/* <ul>{listItems}</ul> */}
+
+
+      {/* </section > */}
     </Layout >
   );
 }

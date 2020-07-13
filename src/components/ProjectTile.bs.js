@@ -9,27 +9,29 @@ function ProjectTile(Props) {
   var possNullExternal = post.frontmatter.ext;
   var renderContentJsx = function (param) {
     return React.createElement("div", undefined, React.createElement("div", {
-                    className: "font-bold text-xl mb-2"
+                    className: "font-bold text-xl mb-2 text-bluedark"
                   }, post.frontmatter.title), React.createElement("p", {
-                    className: "text-gray-700 text-base"
+                    className: "text-gray-700 text-base text-bluedarkest"
                   }, post.excerpt));
   };
   return React.createElement("div", {
-              className: "max-w-sm rounded overflow-hidden shadow-lg h-64"
+              className: "sm:w-1/3 mt-4"
             }, React.createElement("div", {
-                  className: "px-6 py-4"
-                }, renderContentJsx(undefined)), React.createElement("div", undefined, (possNullExternal == null) ? null : React.createElement("a", {
-                        href: possNullExternal,
-                        rel: "noopener noreferrer",
-                        target: "_blank"
-                      }, "EXTERNAL LINK")), React.createElement("div", {
-                  className: "px-6 py-4"
-                }, Belt_Array.map(post.frontmatter.tech, (function (item) {
-                        return React.createElement("span", {
-                                    key: item,
-                                    className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-                                  }, item);
-                      }))));
+                  className: "bg-white h-full p-8 border-b-4 border border-bluedark rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8"
+                }, React.createElement("div", {
+                      className: "px-6 py-4"
+                    }, renderContentJsx(undefined)), React.createElement("div", undefined, (possNullExternal == null) ? null : React.createElement("a", {
+                            href: possNullExternal,
+                            rel: "noopener noreferrer",
+                            target: "_blank"
+                          }, "EXTERNAL LINK")), React.createElement("div", {
+                      className: "px-6 py-4"
+                    }, Belt_Array.map(post.frontmatter.tech, (function (item) {
+                            return React.createElement("span", {
+                                        key: item,
+                                        className: "inline-block bg-bluedark rounded-full px-3 py-1 mt-1 text-sm font-semibold text-white mr-2 b"
+                                      }, item);
+                          })))));
 }
 
 var Link;
