@@ -23,9 +23,9 @@ export default function FavouriteRoll() {
                             title
                             image {
                                 childImageSharp {
-                                  fluid(maxWidth: 100, maxHeight: 100, quality:82, duotone: {
-                                    highlight: "#15DB93",
-                                    shadow: "#080F5B",                                  
+                                  fluid(maxWidth: 200, maxHeight: 200, quality:97, duotone: {
+                                    highlight: "#7F7EFF",
+                                    shadow: "#2C2C54",                                  
                                   }) {
                                     ...GatsbyImageSharpFluid
                                   }

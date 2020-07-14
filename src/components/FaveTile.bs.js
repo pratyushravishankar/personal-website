@@ -29,7 +29,7 @@ function FaveTile(Props) {
   return React.createElement("div", {
               className: "sm:w-1/3 mt-4"
             }, React.createElement("div", {
-                  className: "h-full overflow-hidden rounded-lg border-b-4 border-aquamarine shadow-2xl h-64 bg-bluedarkest flex flex-col sm:mx-2",
+                  className: "h-full overflow-hidden rounded-lg border-b-4 border-cadet bg-cadet p-1 shadow-2xl h-64 flex flex-col sm:mx-2",
                   onMouseEnter: (function (param) {
                       return Curry._1(setTileState, (function (param) {
                                     return /* Words */0;

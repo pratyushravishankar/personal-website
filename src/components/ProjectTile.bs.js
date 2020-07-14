@@ -9,27 +9,38 @@ function ProjectTile(Props) {
   var possNullExternal = post.frontmatter.ext;
   var renderContentJsx = function (param) {
     return React.createElement("div", undefined, React.createElement("div", {
-                    className: "font-bold text-xl mb-2 text-bluedark"
-                  }, post.frontmatter.title), React.createElement("p", {
-                    className: "text-gray-700 text-base text-bluedarkest"
+                    className: "flex flex-row justify-center"
+                  }, React.createElement("div", {
+                        className: "font-bold text-2xl mb-2 text-cadet"
+                      }, post.frontmatter.title), React.createElement("div", undefined, (possNullExternal == null) ? null : React.createElement("a", {
+                              href: possNullExternal,
+                              rel: "noopener noreferrer",
+                              target: "_blank"
+                            }, React.createElement("svg", {
+                                  className: "fill-current text-cadet hover:text-celadon-green",
+                                  height: "30",
+                                  width: "30",
+                                  viewBox: "0 0 24 24",
+                                  xmlns: "http://www.w3.org/2000/svg"
+                                }, React.createElement("path", {
+                                      className: "heroicon-ui",
+                                      d: "M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41zM17 14a1 1 0 0 1 2 0v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2h5a1 1 0 0 1 0 2H5v12h12v-5z"
+                                    }))))), React.createElement("p", {
+                    className: " text-base text-cadet"
                   }, post.excerpt));
   };
   return React.createElement("div", {
               className: "sm:w-1/3 mt-4"
             }, React.createElement("div", {
-                  className: "bg-white h-full p-8 border-b-4 border border-bluedark rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8"
+                  className: "bg-white h-full p-8  border-2 border-b-8 border-cadet rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8"
                 }, React.createElement("div", {
                       className: "px-6 py-4"
-                    }, renderContentJsx(undefined)), React.createElement("div", undefined, (possNullExternal == null) ? null : React.createElement("a", {
-                            href: possNullExternal,
-                            rel: "noopener noreferrer",
-                            target: "_blank"
-                          }, "EXTERNAL LINK")), React.createElement("div", {
+                    }, renderContentJsx(undefined)), React.createElement("div", {
                       className: "px-6 py-4"
                     }, Belt_Array.map(post.frontmatter.tech, (function (item) {
                             return React.createElement("span", {
                                         key: item,
-                                        className: "inline-block bg-bluedark rounded-full px-3 py-1 mt-1 text-sm font-semibold text-white mr-2 b"
+                                        className: "inline-block bg-cadet rounded-full px-3 py-1 mt-1 text-sm font-semibold text-white mr-2 b"
                                       }, item);
                           })))));
 }

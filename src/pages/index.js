@@ -51,21 +51,27 @@ export default function IndexPage() {
       </div>
 
       <main className="mt-16 w-full flex flex-col justify-center items-center">
-        <div className="max-w-4xl mx-4">
-          <h2 className="font-bold text-xl text-6xl text-bluedarkest border-b-4 border-aquamarine"> Featured projects </h2>
+        <div className="w-full flex flex-col bg-white mt-16 justify-center items-center">
+          <div className="max-w-4xl mx-4">
+            <h2 className="font-bold text-xl text-6xl text-cadet border-b-4 border-celadon-green"> Featured projects </h2>
+          </div>
+
+          <div className="max-w-6xl">
+            <ProjectRoll />
+          </div>
+
         </div>
 
-        <div className="max-w-6xl">
-          <ProjectRoll />
+        <div className="w-full flex flex-col bg-aquamarine mt-16 justify-center items-center">
+          <div className="max-w-4xl mx-4">
+            <h2 className="mt-4 font-bold text-xl text-6xl text-cadet bg-tangerine"> Favourite Things Right Now </h2>
+          </div>
+
+          <div className="max-w-6xl mb-16">
+            <FavouriteRoll />
+          </div>
         </div>
 
-        <div className="max-w-4xl mx-4">
-          <h2 className="font-bold text-xl text-6xl text-bluedarkest border-b-4 border-aquamarine"> Favourite Things Right Now </h2>
-        </div>
-
-        <div className="max-w-6xl mb-16">
-          <FavouriteRoll />
-        </div>
 
       </main>
 

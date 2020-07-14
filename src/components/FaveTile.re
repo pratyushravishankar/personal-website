@@ -38,7 +38,7 @@ let make = (~post) => {
   };
   <div className="sm:w-1/3 mt-4">
     <div
-      className="h-full overflow-hidden rounded-lg border-b-4 border-aquamarine shadow-2xl h-64 bg-bluedarkest flex flex-col sm:mx-2"
+      className="h-full overflow-hidden rounded-lg border-b-4 border-cadet bg-cadet p-1 shadow-2xl h-64 flex flex-col sm:mx-2"
       onMouseEnter={_ => setTileState(_ => Words)}
       onMouseLeave={_ => setTileState(_ => Image)}>
       //   <img className="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
