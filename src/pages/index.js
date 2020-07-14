@@ -4,6 +4,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 // import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+// import Ripple from "../images/ripple.svg";
 
 // import { graphql } from 'gatsby'
 // import PropTypes from "prop-types"
@@ -51,20 +52,23 @@ export default function IndexPage() {
       </div>
 
       <main className="mt-16 w-full flex flex-col justify-center items-center">
-        <div className="w-full flex flex-col bg-white mt-16 justify-center items-center">
-          <div className="max-w-4xl mx-4">
-            <h2 className="font-bold text-xl text-6xl text-cadet border-b-4 border-celadon-green"> Featured projects </h2>
-          </div>
 
-          <div className="max-w-6xl">
-            <ProjectRoll />
-          </div>
+        <div className="bg-scroll" style={{ background: "url('../images/cat-and-human-illustration.svg')" }}>
+          <div className="w-full flex flex-col bg-white mt-16 justify-center items-left">
+            <div className="max-w-6xl mx-4">
+              <h2 className="font-bold text-xl text-6xl text-cadet border-b-4 border-celadon-green"> Featured projects </h2>
+            </div>
 
+            <div className="max-w-6xl">
+              <ProjectRoll />
+            </div>
+
+          </div>
         </div>
 
-        <div className="w-full flex flex-col bg-aquamarine mt-16 justify-center items-center">
+        <div className="w-full flex flex-col bg-cadet mt-16 justify-center items-center">
           <div className="max-w-4xl mx-4">
-            <h2 className="mt-4 font-bold text-xl text-6xl text-cadet bg-tangerine"> Favourite Things Right Now </h2>
+            <h2 className="mt-4 font-bold text-xl text-6xl text-white"> Favourite Things Right Now </h2>
           </div>
 
           <div className="max-w-6xl mb-16">

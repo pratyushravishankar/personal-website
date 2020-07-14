@@ -33,6 +33,7 @@ module.exports = {
         'magenta': '#EC368D',
         'lightpink': '#FF92C2',
         'brightpink': '#FF1F80',
+        'lime': '#BEFFC7',
       },
       boxShadow: {
         coral: '0 4px 14px 0 rgba(168, 208, 230, 0.39)',

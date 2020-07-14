@@ -16,8 +16,8 @@ type tileState =
 let make = (~post) => {
   let possNullExternal = Js.Nullable.toOption(post##frontmatter##ext);
   let renderContentJsx = () => {
-    <div>
-      <div className="flex flex-row justify-center">
+    <div className="flex flex-col justify-centers items-center">
+      <div className="flex flex-row justify-center ">
         <div className="font-bold text-2xl mb-2 text-cadet">
           {React.string(post##frontmatter##title)}
         </div>
@@ -48,9 +48,9 @@ let make = (~post) => {
 
   <div className="sm:w-1/3 mt-4">
     <div
-      className="bg-white h-full p-8  border-2 border-b-8 border-cadet rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8">
+      className="bg-white h-full p-8  border-2 border-b-8 border-cadet rounded-lg flex flex-col justify-center items-center sm:mx-2 sm:p-3 md:p-8">
       <div className="px-6 py-4"> {renderContentJsx()} </div>
-      <div className="px-6 py-4">
+      <div className="px-6 py-">
         {post##frontmatter##tech
          ->Belt.Array.map(item =>
              <span

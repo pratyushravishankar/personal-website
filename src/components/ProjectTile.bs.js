@@ -8,8 +8,10 @@ function ProjectTile(Props) {
   var post = Props.post;
   var possNullExternal = post.frontmatter.ext;
   var renderContentJsx = function (param) {
-    return React.createElement("div", undefined, React.createElement("div", {
-                    className: "flex flex-row justify-center"
+    return React.createElement("div", {
+                className: "flex flex-col justify-centers items-center"
+              }, React.createElement("div", {
+                    className: "flex flex-row justify-center "
                   }, React.createElement("div", {
                         className: "font-bold text-2xl mb-2 text-cadet"
                       }, post.frontmatter.title), React.createElement("div", undefined, (possNullExternal == null) ? null : React.createElement("a", {
@@ -32,11 +34,11 @@ function ProjectTile(Props) {
   return React.createElement("div", {
               className: "sm:w-1/3 mt-4"
             }, React.createElement("div", {
-                  className: "bg-white h-full p-8  border-2 border-b-8 border-cadet rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8"
+                  className: "bg-white h-full p-8  border-2 border-b-8 border-cadet rounded-lg flex flex-col justify-center items-center sm:mx-2 sm:p-3 md:p-8"
                 }, React.createElement("div", {
                       className: "px-6 py-4"
                     }, renderContentJsx(undefined)), React.createElement("div", {
-                      className: "px-6 py-4"
+                      className: "px-6 py-"
                     }, Belt_Array.map(post.frontmatter.tech, (function (item) {
                             return React.createElement("span", {
                                         key: item,
