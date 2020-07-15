@@ -60,9 +60,9 @@ function SEO({ description, lang, meta, keywords, title }) {
         .concat(
           keywords.length > 0
             ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
+              name: `keywords`,
+              content: keywords.join(`, `),
+            }
             : []
         )
         .concat(meta)}
@@ -74,7 +74,7 @@ function SEO({ description, lang, meta, keywords, title }) {
 
 SEO.defaultProps = {
   lang: `en`,
-  keywords: [],
+  keywords: ['pratyush ravishankar', 'pratyushravishankar', 'Pratyush', 'Ravishankar', 'software engineer'],
   meta: [],
 };
 
