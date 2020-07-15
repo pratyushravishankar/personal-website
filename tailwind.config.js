@@ -54,6 +54,9 @@ module.exports = {
         '6xl': '4rem',
         '7xl': '5rem',
         '10xl': '10rem',
+      },
+      minHeight: {
+        '3/4-screen': '75vh',
       }
     }
 

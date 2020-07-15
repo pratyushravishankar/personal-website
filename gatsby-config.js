@@ -7,7 +7,10 @@ module.exports = {
   siteMetadata: {
     title: `Pratyush Ravishankar`,
     description: `Pratyush Ravishankar personal website`,
-    author: `@pratyushravishankar`,
+    author: `Pratyush Ravishankar`,
+    social: {
+      twitter: `mukulrathi_`,
+    },
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -57,6 +60,13 @@ module.exports = {
             ? [require(`cssnano`)]
             : []),
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-172739291-1",
       },
     },
     `gatsby-plugin-offline`,
