@@ -41,7 +41,7 @@ export default function IndexPage() {
         src={catAndHumanIllustration}
       /> */}
 
-      <div className="w-full bg-cyber-yellow px-4 py-2 flex flex-col justify-center items-center">
+      <div className="w-full min-h-screen bg-cyber-yellow px-4 py-2 flex flex-col justify-center items-center">
         <h1 className="break-all p-3 mb-4 text-7xl font-bold font-serif  text-cadet max-w-full rounded-lg lg:text-10xl">
           Pratyush Ravishankar//
           <a

@@ -6,7 +6,7 @@ const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
   siteMetadata: {
     title: `Pratyush Ravishankar`,
-    description: `personal website of Pratyush Ravishankar`,
+    description: `Pratyush Ravishankar personal website`,
     author: `@pratyushravishankar`,
   },
   plugins: [
