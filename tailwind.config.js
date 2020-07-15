@@ -34,10 +34,27 @@ module.exports = {
         'lightpink': '#FF92C2',
         'brightpink': '#FF1F80',
         'lime': '#BEFFC7',
+        'cyber-yellow': '#FFD400',
+        'rose': '#D90368',
       },
       boxShadow: {
         coral: '0 4px 14px 0 rgba(168, 208, 230, 0.39)',
       },
+      fontSize: {
+        'xs': '.75rem',
+        'sm': '.875rem',
+        'tiny': '.875rem',
+        'base': '1rem',
+        'lg': '1.125rem',
+        'xl': '1.25rem',
+        '2xl': '1.5rem',
+        '3xl': '1.875rem',
+        '4xl': '2.25rem',
+        '5xl': '3rem',
+        '6xl': '4rem',
+        '7xl': '5rem',
+        '10xl': '10rem',
+      }
     }
 
 

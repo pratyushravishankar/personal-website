@@ -41,14 +41,41 @@ export default function IndexPage() {
         src={catAndHumanIllustration}
       /> */}
 
-      <div className="w-full h-screen bg-bluedarkest px-4 py-2 flex flex-col justify-center items-center">
-        <h2 className="inline-block p-3 mb-4 text-6xl font-bold bg-bluedark text-aquamarine w-full max-w-4xl rounded-lg">
-          Pratyush Ravishankar | UNDER DEVELOPMENT.
-        </h2>
+      <div className="w-full bg-cyber-yellow px-4 py-2 flex flex-col justify-center items-center">
+        <h1 className="break-all p-3 mb-4 text-7xl font-bold font-serif  text-cadet max-w-full rounded-lg lg:text-10xl">
+          Pratyush Ravishankar //
+          <a
+            className="hover:text-rose"
+            href="https://www.linkedin.com/in/pratyush-ravishankar-a5391615a/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          ~
+          <a
+            className="hover:text-rose"
+            href="https://github.com/pratyushravishankar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
 
-        <p className="bg-bluedark text-aquamarine">
+          ~
+          <a
+            className="hover:text-rose"
+            href="../content/resumewebsite.pdf" download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resumé
+          </a>
+        </h1>
+
+        {/* <p className="bg-bluedark text-aquamarine">
           under development
-        </p>
+        </p> */}
       </div>
 
       <main className="mt-16 w-full flex flex-col justify-center items-center">
