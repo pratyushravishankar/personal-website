@@ -33,7 +33,7 @@ export default function ProjectRoll() {
             render={data => (
 
                 // <div className="grid gap-4 grid-cols-3">
-                <div className="flex flex-wrap flex-col sm:flex-row sm:mx-2">
+                <div className="flex flex-wrap flex-col sm:flex-row mx-2">
 
 
 
