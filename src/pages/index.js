@@ -43,7 +43,7 @@ export default function IndexPage() {
 
       <div className="w-full bg-cyber-yellow px-4 py-2 flex flex-col justify-center items-center">
         <h1 className="break-all p-3 mb-4 text-7xl font-bold font-serif  text-cadet max-w-full rounded-lg lg:text-10xl">
-          Pratyush Ravishankar //
+          Pratyush Ravishankar//
           <a
             className="hover:text-rose"
             href="https://www.linkedin.com/in/pratyush-ravishankar-a5391615a/"
@@ -65,7 +65,7 @@ export default function IndexPage() {
           ~
           <a
             className="hover:text-rose"
-            href="../content/resumewebsite.pdf" download
+            href="/resumewebsite.pdf" download
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -93,9 +93,9 @@ export default function IndexPage() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col bg-cadet mt-16 justify-center items-center">
+        <div className="w-full flex flex-col bg-white mt-16 justify-center items-center">
           <div className="max-w-4xl mx-4">
-            <h2 className="mt-4 font-bold text-xl text-6xl text-white"> Favourite Things Right Now </h2>
+            <h2 className="mt-4 font-bold text-xl text-6xl text-cadet px-6 bg-white rounded"> Favourite Things Right Now </h2>
           </div>
 
           <div className="max-w-6xl mb-16">

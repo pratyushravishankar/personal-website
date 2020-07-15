@@ -16,7 +16,7 @@ function Footer() {
                         Pratyush Ravishankar
                 </a>
                 </p>
-
+                {/* 
                 <p>
                     <a
                         className="font-bold text-white no-underline"
@@ -26,7 +26,7 @@ function Footer() {
                     >
                         GitHub
                 </a>
-                </p>
+                </p> */}
             </nav>
         </footer>
 
