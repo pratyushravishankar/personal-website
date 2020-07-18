@@ -13,7 +13,7 @@ function ProjectTile(Props) {
               }, React.createElement("div", {
                     className: "flex flex-row justify-center "
                   }, React.createElement("div", {
-                        className: "font-bold text-2xl mb-2 text-cadet"
+                        className: "font-roboto text-2xl mb-2 text-cadet"
                       }, post.frontmatter.title), React.createElement("div", undefined, (possNullExternal == null) ? null : React.createElement("a", {
                               href: possNullExternal,
                               rel: "noopener noreferrer",
@@ -28,7 +28,7 @@ function ProjectTile(Props) {
                                       className: "heroicon-ui",
                                       d: "M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41zM17 14a1 1 0 0 1 2 0v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2h5a1 1 0 0 1 0 2H5v12h12v-5z"
                                     }))))), React.createElement("p", {
-                    className: " text-base text-cadet"
+                    className: "font-roboto text-base text-cadet"
                   }, post.excerpt));
   };
   return React.createElement("div", {
@@ -42,7 +42,7 @@ function ProjectTile(Props) {
                     }, Belt_Array.map(post.frontmatter.tech, (function (item) {
                             return React.createElement("span", {
                                         key: item,
-                                        className: "inline-block bg-cadet rounded-full px-3 py-1 mt-1 text-sm font-semibold text-white mr-2 b"
+                                        className: " font-roboto inline-block bg-cadet rounded-full px-3 py-1 mt-1 text-sm font-semibold text-white mr-2 b"
                                       }, item);
                           })))));
 }

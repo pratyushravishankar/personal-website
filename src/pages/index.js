@@ -41,8 +41,8 @@ export default function IndexPage() {
         src={catAndHumanIllustration}
       /> */}
 
-      <div className="w-full min-h-3/4-screen bg-cyber-yellow px-4 py-2 flex flex-col justify-center items-center">
-        <h1 className="break-all p-3 mb-4 text-7xl font-bold font-serif  text-cadet max-w-full rounded-lg lg:text-10xl">
+      <div className="w-full min-h-3/4-screen bg-cyber-yellow px-4 py-2 flex flex-col justify-center items-center ">
+        <h1 className="break-all p-3 mb-4 text-7xl text-cadet max-w-full rounded-lg lg:text-10xl font-heading">
           Pratyush Ravishankar//
           <a
             className="hover:text-rose"
@@ -83,7 +83,7 @@ export default function IndexPage() {
         <div className="bg-scroll" style={{ background: "url('../images/cat-and-human-illustration.svg')" }}>
           <div className="w-full flex flex-col bg-white mt-16 justify-center items-left">
             <div className="max-w-6xl mx-4">
-              <h2 className="font-bold text-xl text-6xl text-cadet border-b-4 border-celadon-green"> Featured projects </h2>
+              <h2 className="font-heading text-xl text-6xl text-cadet border-b-4 border-celadon-green "> Featured projects</h2>
             </div>
 
             <div className="max-w-6xl">
@@ -95,7 +95,7 @@ export default function IndexPage() {
 
         <div className="w-full flex flex-col bg-cadet mt-16 justify-center items-center">
           <div className="max-w-6xl mx-4">
-            <h2 className="font-bold text-xl text-6xl text-white border-b-4 border-celadon-green"> Favourite things right now  | UNDER DEVELOPMENT </h2>
+            <h2 className="font-heading text-xl text-6xl text-white border-b-4 border-celadon-green"> Favourite things right now  | UNDER DEVELOPMENT </h2>
           </div>
 
           <div className="max-w-6xl mb-16">

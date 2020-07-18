@@ -21,9 +21,9 @@ function FaveTile(Props) {
     return React.createElement("div", {
                 className: "px-6 py-4 flex flex-col items-center sm:p-3 md:p-8"
               }, React.createElement("div", {
-                    className: "font-bold text-xl mb-2 text-white"
+                    className: "font-roboto font-bold text-xl mb-2 text-white"
                   }, post.frontmatter.title), React.createElement("p", {
-                    className: "text-white text-base"
+                    className: "font-roboto text-white text-base"
                   }, post.excerpt));
   };
   return React.createElement("div", {
@@ -43,11 +43,11 @@ function FaveTile(Props) {
                 }, React.createElement("div", undefined, match[0] ? renderImageJsx(undefined) : renderWordsJsx(undefined)), React.createElement("div", {
                       className: "px-6 py-4"
                     }, React.createElement("span", {
-                          className: "inline-block bg-red rounded-full px-3 py-1 text-sm font-semibold text-champagne mr-2"
+                          className: "font-roboto inline-block bg-red rounded-full px-3 py-1 text-sm font-semibold text-champagne mr-2"
                         }, "#photography"), React.createElement("span", {
-                          className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                          className: "font-roboto inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
                         }, "#travel"), React.createElement("span", {
-                          className: "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                          className: "font-roboto inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
                         }, "#winter"))));
 }
 

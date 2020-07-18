@@ -18,7 +18,7 @@ let make = (~post) => {
   let renderContentJsx = () => {
     <div className="flex flex-col justify-centers items-center">
       <div className="flex flex-row justify-center ">
-        <div className="font-bold text-2xl mb-2 text-cadet">
+        <div className="font-roboto text-2xl mb-2 text-cadet">
           {React.string(post##frontmatter##title)}
         </div>
         <div>
@@ -41,7 +41,9 @@ let make = (~post) => {
            }}
         </div>
       </div>
-      <p className=" text-base text-cadet"> {React.string(post##excerpt)} </p>
+      <p className="font-roboto text-base text-cadet">
+        {React.string(post##excerpt)}
+      </p>
     </div>;
   };
   // className="max-w-sm rounded overflow-hidden bg-gray-200 border-b-4 border-bluedark h-64">
@@ -54,7 +56,7 @@ let make = (~post) => {
         {post##frontmatter##tech
          ->Belt.Array.map(item =>
              <span
-               className="inline-block bg-cadet rounded-full px-3 py-1 mt-1 text-sm font-semibold text-white mr-2 b"
+               className=" font-roboto inline-block bg-cadet rounded-full px-3 py-1 mt-1 text-sm font-semibold text-white mr-2 b"
                key=item>
                {React.string(item)}
              </span>

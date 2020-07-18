@@ -1,10 +1,15 @@
 // See https://tailwindcss.com/docs/configuration for details
+
 module.exports = {
   purge: [
     './src/**/*.js',
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        heading: ["Source Code Pro", "sans-serif"]
+      },
       colors: {
         'regal-blue': '#243c5a',
         'grape': '#9888A5',

@@ -30,10 +30,12 @@ let make = (~post) => {
   };
   let renderWordsJsx = () => {
     <div className="px-6 py-4 flex flex-col items-center sm:p-3 md:p-8">
-      <div className="font-bold text-xl mb-2 text-white">
+      <div className="font-roboto font-bold text-xl mb-2 text-white">
         {React.string(post##frontmatter##title)}
       </div>
-      <p className="text-white text-base"> {React.string(post##excerpt)} </p>
+      <p className="font-roboto text-white text-base">
+        {React.string(post##excerpt)}
+      </p>
     </div>;
   };
   <div className="sm:w-1/3 mt-4">
@@ -51,15 +53,15 @@ let make = (~post) => {
         </div>
         <div className="px-6 py-4">
           <span
-            className="inline-block bg-red rounded-full px-3 py-1 text-sm font-semibold text-champagne mr-2">
+            className="font-roboto inline-block bg-red rounded-full px-3 py-1 text-sm font-semibold text-champagne mr-2">
             {React.string("#photography")}
           </span>
           <span
-            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+            className="font-roboto inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
             {React.string("#travel")}
           </span>
           <span
-            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+            className="font-roboto inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
             {React.string("#winter")}
           </span>
         </div>
