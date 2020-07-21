@@ -26,7 +26,7 @@ export default function IndexPage() {
 
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={['pratyush ravishankar', 'pratyushravishankar', 'Pratyush', 'Ravishankar', 'software engineer']}
         title="Home"
       />
 

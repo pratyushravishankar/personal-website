@@ -4,6 +4,7 @@ title: Personal Website
 date: 2020-06-11T15:04:10.000Z
 featuredimage: /img/chemex.jpg
 ext: https://github.com/pratyushravishankar/tailwindwebsite
+featuredpost: true
 tech:
     - Gatsby
     - ReasonML

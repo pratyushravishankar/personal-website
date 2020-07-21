@@ -13,22 +13,23 @@ export default function ProjectRoll() {
     return (
         <StaticQuery
             query={graphql`
-                query ProjectQuery {
-                    allMarkdownRemark(filter: {frontmatter: {key: {eq: "project"}}}, sort: {order: DESC, fields: frontmatter___date}) {
-                    edges {
-                        node {
-                        id
-                        frontmatter {
-                            key
-                            title
-                            tech
-                            ext
-                        }
-                        excerpt
-                        }
+            query ProjectQuery {
+                allMarkdownRemark(filter: {frontmatter: {key: {eq: "project"}, featuredpost: {eq: true}}}, sort: {order: DESC, fields: frontmatter___date}) {
+                  edges {
+                    node {
+                      id
+                      frontmatter {
+                        key
+                        title
+                        tech
+                        ext
+                      }
+                      excerpt
                     }
-                    }
+                  }
                 }
+              }
+              
             `}
             render={data => (
 

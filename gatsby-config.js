@@ -8,9 +8,7 @@ module.exports = {
     title: `Pratyush Ravishankar`,
     description: `Pratyush Ravishankar personal website`,
     author: `Pratyush Ravishankar`,
-    social: {
-      twitter: `mukulrathi_`,
-    },
+
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -41,13 +39,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
+        name: `pratyush-ravishankar-logo`,
+        short_name: `logo`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal["400"],
+        theme_color: fullConfig.theme.colors.black,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`,
+        icon: `src/images/willdofornow.png`,
       },
     },
     {
