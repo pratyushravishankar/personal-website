@@ -29,7 +29,6 @@ export default function IndexPage() {
         markdownRemark(frontmatter: {key: {eq: "index-page"}}) {
           id
           frontmatter {
-
             favourites {
               title
             }
