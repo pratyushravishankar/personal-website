@@ -8,6 +8,8 @@ module.exports = {
     title: `Pratyush Ravishankar`,
     description: `Pratyush Ravishankar personal website`,
     author: `Pratyush Ravishankar`,
+    siteUrl: `https://pratyushravishankar.netlify.app`,
+    keywords: ['pratyush ravishankar', 'pratyushravishankar', 'Pratyush', 'Ravishankar', 'software engineer']
 
   },
   plugins: [
