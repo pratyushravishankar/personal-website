@@ -100,7 +100,7 @@ export default function IndexPage() {
           <main className="mt-16 w-full flex flex-col justify-center items-center">
 
             <div className="bg-scroll" style={{ background: "url('../images/cat-and-human-illustration.svg')" }}>
-              <div className="w-full flex flex-col bg-white mt-16 justify-center items-left">
+              <div className="w-full flex flex-col bg-white justify-center items-left">
                 <div className="max-w-6xl mx-4">
                   <h2 className="font-heading text-xl text-6xl text-cadet border-b-4 border-celadon-green "> {data.markdownRemark.frontmatter.projects.title}</h2>
                 </div>
@@ -114,7 +114,7 @@ export default function IndexPage() {
 
             <div className="w-full flex flex-col bg-cadet mt-16 justify-center items-center">
               <div className="max-w-6xl mx-4">
-                <h2 className="font-heading text-xl text-6xl text-white border-b-4 border-celadon-green"> {data.markdownRemark.frontmatter.favourites.title} </h2>
+                <h2 className="font-heading text-xl text-6xl mt-16 text-white border-b-4 border-celadon-green"> {data.markdownRemark.frontmatter.favourites.title} </h2>
               </div>
 
               <div className="max-w-6xl mb-16">
