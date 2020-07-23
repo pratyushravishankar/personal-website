@@ -2,7 +2,9 @@ import { useStaticQuery, graphql } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import { Helmet } from "react-helmet";
-
+import ogImage from "../images/og.png";
+// src/components/seo.js
+// src/images/og.png
 function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
   const { site } = useStaticQuery(graphql`
     query DefaultSEOQuery {
@@ -24,11 +26,16 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
       : null
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+  const ogimage = `${site.siteMetadata.siteUrl}${ogImage}`
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
+      // <meta property="og:image" content={`${config.siteUrl}${ogImage}`} />
+      // <meta property="og:image:width" content="1200" />
+      // <meta property="og:image:height" content="630" />
+      // <meta property="og:image:type" content="image/png" />
       meta={[
         {
           name: `description`,
@@ -41,6 +48,22 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: ogimage,
+        },
+        {
+          property: `og:image:width`,
+          content: `1200`
+        },
+        {
+          property: `og:image:height`,
+          content: `630`
+        },
+        {
+          property: `og:image:type`,
+          content: `image/png`
         },
         {
           name: "keywords",
