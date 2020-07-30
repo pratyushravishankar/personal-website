@@ -84,7 +84,7 @@ export default function IndexPage() {
           ~
           <a
                 className="hover:text-rose"
-                href="/resumewebsite.pdf" download
+                href="/resume.pdf" download
                 target="_blank"
                 rel="noopener noreferrer"
               >
