@@ -1,9 +1,8 @@
 ---
 key: favourite
-title: fourth post
+title: Undercover Economist - Tim Harford
 date: 2020-06-11T15:04:10.000Z
-image: ../../images/code-jumbotron.png
-
+image: ../../images/undercover_economist.jpg
 
 ---
 See what happens when there's four components
