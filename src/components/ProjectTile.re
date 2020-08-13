@@ -1,7 +1,4 @@
 module Link = Gatsby.Link;
-// module { FaExternalLinkAlt } from "react-icons/fa";
-// %bs.raw
-// {| import { FaExternalLinkAlt } from 'react-icons/fa' |};
 
 type imageInfoString = {
   image: option(string),
@@ -61,7 +58,6 @@ let make = (~post) => {
                {React.string(item)}
              </span>
            )
-         /* Since everything is typed, the arrays need to be, too! */
          ->React.array}
       </div>
     </div>

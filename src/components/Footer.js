@@ -16,17 +16,6 @@ function Footer() {
                         Pratyush Ravishankar
                 </a>
                 </p>
-                {/* 
-                <p>
-                    <a
-                        className="font-bold text-white no-underline"
-                        href="https://github.com/taylorbryant/gatsby-starter-tailwind"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                </a>
-                </p> */}
             </nav>
         </footer>
 

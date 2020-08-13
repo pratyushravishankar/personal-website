@@ -42,20 +42,10 @@ export default function FavouriteRoll() {
 
             `}
             render={data => (
-
-                // <div className="h-screen flex">
-                // <div className="grid gap-4 grid-cols-3 bg-blue-500 w-full">
                 <div className="flex flex-wrap flex-col sm:flex-row sm:mx-2">
                     {data.allMarkdownRemark.edges &&
                         data.allMarkdownRemark.edges.map(({ node: post }) => (
-                            // <div className="w-1/2" key={post.id}>
                             <FaveTile key={post.id} post={post} />
-                            /* // <li key={post.id}> lol ß</li> */
-
-                            // <FaveTile post={post} />
-                            // </div>
-
-
                         ))}
 
                 </div>
@@ -65,11 +55,6 @@ export default function FavouriteRoll() {
 
             )}
         />
-        // <div>
-        //     <p>
-        //         lol
-        //     </p>
-        // </div>
     )
 }
 
